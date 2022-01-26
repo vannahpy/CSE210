@@ -10,6 +10,12 @@ class Die:
     def _init_(self):
         """Constructs a new instance of Die with a value and points attribute
         Args: self (Die): An instance of Die."""
+        self.value = 0
+        self.points = 0
+
+    def roll(self):
+        """Generates a new random value and calculates the points.
+        Args: self (Die): An instance of Die."""
         self.value = random.randint(1, 6, endpoint = True)
         if self.value == 1:
             self.points = 100
@@ -17,8 +23,4 @@ class Die:
             self.points = 50 
         else:
             self.points = 0
-
-#    def roll(self):
-#        """Generates a new random value and calculates the points.
-#        Args: self (Die): An instance of Die."""
-#        self.score = 
+        return self.points
