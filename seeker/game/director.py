@@ -1,19 +1,17 @@
-from game.terminal_service import TerminalService
-from game.hider import Hider
-from game.seeker import Seeker
+from terminal_service import TerminalService
+from hider import Hider
+from seeker import Seeker
 
 
 class Director:
     """A person who directs the game. 
-    
-    The responsibility of a Director is to control the sequence of play.
-
-    Attributes:
-        hider (Hider): The game's hider.
-        is_playing (boolean): Whether or not to keep playing.
-        seeker (Seeker): The game's seeker.
-        terminal_service: For getting and displaying information on the terminal.
-    """
+The responsibility of a Director is to control the sequence of play.
+Attributes:
+    hider (Hider): The game's hider.
+    is_playing (boolean): Whether or not to keep playing.
+    seeker (Seeker): The game's seeker.
+    terminal_service: For getting and displaying information on the terminal.
+"""
 
     def __init__(self):
         """Constructs a new Director.
