@@ -16,7 +16,7 @@ class Die:
     def roll(self):
         """Generates a new random value and calculates the points.
         Args: self (Die): An instance of Die."""
-        self.value = random.randint(1, 6, endpoint = True)
+        self.value = random.randint(1, 7)
         if self.value == 1:
             self.points = 100
         elif self.value == 5:
