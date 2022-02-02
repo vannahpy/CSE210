@@ -6,7 +6,7 @@ class Seeker:
     Attributes:
     location (int): The location of the Seeker (1-1000)."""
   
-    def __init__(self, seeker):
+    def __init__(self):
         """Constructs a new Seeker.
         Args:
             self (Seeker): An instance of Seeker."""
